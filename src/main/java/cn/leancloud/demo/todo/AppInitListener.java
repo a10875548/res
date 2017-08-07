@@ -27,7 +27,7 @@ public class AppInitListener implements ServletContextListener {
   @Override
   public void contextInitialized(ServletContextEvent arg0) {
     logger.info("LeanEngine app init.");
-    System.setProperty("LEANCLOUD_APP_PORT", "8080");
+    System.setProperty("LEANCLOUD_APP_PORT", "51320");
     // 注册子类化
     AVObject.registerSubclass(Todo.class);
     // 初始化AVOSCloud，请保证在整个项目中间只初始化一次
